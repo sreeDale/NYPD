@@ -61,7 +61,7 @@ if __name__ == '__main__':
     first_10 = list(dict_items)[:10]
 
     print(first_10)
-    uvalue=input("Enter your value :") 
+    uvalue=input("Enter Required Offence Description Category to export to CSV  :") 
     print(uvalue)
     read_and_count.write_to_csv('C:/NYPD/nypd-arrest-data-2018-1.csv',
                                 'C:/NYPD/output.csv', 'OFNS_DESC', uvalue)
