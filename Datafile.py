@@ -21,7 +21,7 @@ class SampleDataProcessing:
                 if line_count == 0:
                     print(row)
                     column_posn = SampleDataProcessing.calc_posn_of_column(row, grouping_column)
-                    print('position of column is:' + str(column_posn))
+                 #   print('position of column is:' + str(column_posn))
                 else:
                     if row[column_posn] not in dict_of_offence_desc:
                         dict_of_offence_desc[row[column_posn]] = 1
@@ -41,7 +41,7 @@ class SampleDataProcessing:
             line_count = 0
             for row in csv_reader:
                 if line_count == 0:
-                    print(row)
+                   # print(row)
                     column_posn = SampleDataProcessing.calc_posn_of_column(row, lookup_column)
                     writer.writerow(row)
                 else:
@@ -65,4 +65,5 @@ if __name__ == '__main__':
     print(uvalue)
     read_and_count.write_to_csv('C:/NYPD/nypd-arrest-data-2018-1.csv',
                                 'C:/NYPD/output.csv', 'OFNS_DESC', uvalue)
-                                
+    print(" For records please find the export file name output.csv")                          
+
