@@ -11,7 +11,7 @@ class SampleDataProcessing:
                 return curr_posn
             else:
                 curr_posn += 1
-
+# This  group category
     def read_csv(self, my_file, grouping_column):
         dict_of_offence_desc = {}
         with open(my_file) as csv_file:
@@ -33,7 +33,7 @@ class SampleDataProcessing:
                                                                reverse=True)}
 
         return sorted_dict_of_offence_desc
-
+# This is to write to the file
     def write_to_csv(self, input_file, output_file, lookup_column, keyword):
         with open(input_file) as csv_file, open(output_file, 'w', newline="") as file:
             csv_reader = csv.reader(csv_file)
