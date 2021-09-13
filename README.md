@@ -56,7 +56,7 @@ Details of the files in GitHub :
 -	Datafile.py – is the file which is cover both the requirements. 
 -	Nypd-arrest-data-2018-1.csv – is the given source data file 
 -	Output.csv – is the output file post completing the requirement 2 
--	Test_process_data.py – is the unit test file
+-	Test_process_data.py – is the unit test file as part of integration
 
 Contact
 Created by @Sree - feel free to contact me!
